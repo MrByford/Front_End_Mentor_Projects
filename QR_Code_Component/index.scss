@@ -5,7 +5,7 @@ $lightGrey: hsl(212, 45%, 89%);
 $darkBlue: hsl(218, 44%, 22%);
 $white: hsl(0, 0%, 100%); 
 
-body{
+body {
     background-color: $lightGrey;
     display: flex;
     justify-content: center;
@@ -14,36 +14,37 @@ body{
     font-family: 'Outfit', sans-serif;
 }
 
-@media (max-width: 375px){
-    .container{
-        width: 90vw;
-    }
-}
-
-.container{
+.container {
     background-color: $white;
     border-radius: 15px;
     width: 20vw;
     margin: 20px 0px;
     text-align: center;
     padding: 15px;
-    .qrCode{
-        img{
+
+    .qrCode {
+        img {
             width: 100%;
             height: auto;
             border-radius: 15px;
         }
     }
-    .textContent{
-        h1{
+
+    .textContent {
+        h1 {
             font-weight: 700;
             font-size: 1.5rem;
             color: $darkBlue;
         }
-        p{
+
+        p {
             font-size: 15px;
             font-weight: 400;
             color: $grayishBlue;
         }
+    }
+
+    @media screen and (max-width: 375px) {
+        width: 85vw;
     }
 }

@@ -8,11 +8,6 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
-@media (max-width: 375px) {
-  .container {
-    width: 90vw;
-  }
-}
 .container {
   background-color: hsl(0, 0%, 100%);
   border-radius: 15px;
@@ -35,4 +30,9 @@ body {
   font-size: 15px;
   font-weight: 400;
   color: hsl(220, 15%, 55%);
+}
+@media screen and (max-width: 375px) {
+  .container {
+    width: 85vw;
+  }
 }/*# sourceMappingURL=index.css.map */
