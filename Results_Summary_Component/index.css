@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+body {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.3137254902);
+  margin: 20px;
+  width: 70vw;
+  display: flex;
+}
+.container .leftContent {
+  background: rgb(46, 43, 233);
+  background: linear-gradient(0deg, rgb(46, 43, 233) 0%, rgb(73, 58, 215) 40%, rgb(120, 87, 255) 100%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  padding: 0 45px;
+  box-sizing: border-box;
+}
+.container .leftContent .circle {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  background-color: hsl(256, 72%, 46%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+.container .leftContent h1 {
+  color: hsl(0, 0%, 100%);
+  padding: 0px;
+  margin: 15px;
+}
+.container .leftContent p {
+  color: hsl(221, 100%, 96%);
+  font-weight: lighter;
+  font-size: 13px;
+  padding: 0px;
+  margin: 0px;
+  line-height: 16px;
+}
+.container .rightContent {
+  width: 50%;
+  padding: 0 45px;
+}
+.container .rightContent aside {
+  width: 100%;
+}
+.container .rightContent .sectionContainer {
+  min-width: 100%;
+  margin: 10px 0 0 0;
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.container .rightContent .red {
+  background-color: hsla(0, 100%, 67%, 0.3);
+  color: hsl(0, 100%, 67%);
+}
+.container .rightContent .yellow {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.3);
+}
+.container .rightContent .green {
+  background-color: hsla(166, 100%, 37%, 0.3);
+  color: hsl(166, 100%, 37%);
+}
+.container .rightContent .purple {
+  background-color: hsla(234, 85%, 45%, 0.2);
+  color: hsl(234, 85%, 45%);
+}
+.container .rightContent button {
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  border-radius: 25px;
+  padding: 15px;
+}/*# sourceMappingURL=index.css.map */

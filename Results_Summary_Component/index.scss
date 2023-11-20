@@ -1,0 +1,123 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+$mainFont: 'Hanken Grotesk', sans-serif;
+
+// Colours Primary
+$lightRed: hsl(0, 100%, 67%);
+$lightRedHSLA: hsla(0, 100%, 67%, 0.3);
+$orangeyYellow: hsl(39, 100%, 56%);
+$orangeyYellowHSLA: hsla(39, 100%, 56%, 0.3);
+$greenTeal: hsl(166, 100%, 37%);
+$greenTealHSLA: hsl(166, 100%, 37%, 0.3);
+$cobaltBlue: hsl(234, 85%, 45%);
+$cobaltBlueHSLA: hsla(234, 85%, 45%, 0.2);
+
+// Colours Background
+$lightSlateBlue: hsl(252, 100%, 67%);
+$lightRoyalBlue: hsl(241, 81%, 54%);
+$violetBlueCircle: hsla(256, 72%, 46%, 1);
+$persianBlueCircle: hsla(241, 72%, 46%, 0);
+
+// Neutral Colours
+$white: hsl(0, 0%, 100%);
+$paleBlue: hsl(221, 100%, 96%);
+$lightLavender: hsl(241, 100%, 89%);
+$darkGrayBlue: hsl(224, 30%, 27%);
+
+body{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    font-family: $mainFont;
+}
+
+// For Responsive Design
+@media (max-width: 375px) {
+    
+}
+
+.container{
+    border-radius: 15px;
+    background-color: $white;
+    box-shadow: 7px 7px 20px #00000050;
+    margin: 20px;
+    width: 70vw;
+    display: flex;
+    .leftContent{
+        background: rgb(46,43,233);
+        background: linear-gradient(0deg, rgba(46,43,233,1) 0%, rgba(73,58,215,1) 40%, rgba(120,87,255,1) 100%);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        text-align: center;
+        padding: 0 45px;
+        box-sizing: border-box;
+        .circle{
+            border-radius: 50%;
+            height: 120px;
+            width: 120px;
+            background-color: $violetBlueCircle;
+            color: $white;
+            text-align: center;
+        }
+        h1{
+            color: $white;
+            padding: 0px;
+            margin: 15px;
+        }
+        p{
+            color: $paleBlue;
+            font-weight:lighter;
+            font-size: 13px;
+            padding: 0px;
+            margin: 0px;
+            line-height: 16px;
+        }
+    }
+    .rightContent{
+        width: 50%;
+        padding: 0 45px;
+        aside{
+            width: 100%;
+        }
+        .sectionContainer{
+            min-width: 100%;
+            margin: 10px 0 0 0;
+            border-radius: 8px;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+        }
+        .red{
+            background-color: $lightRedHSLA;
+            color: $lightRed;
+        }
+        .yellow{
+            color: $orangeyYellow;
+            background-color: $orangeyYellowHSLA;
+        }
+        .green{
+            background-color: $greenTealHSLA;
+            color: $greenTeal;
+        }
+        .purple{
+            background-color: $cobaltBlueHSLA;
+            color: $cobaltBlue;
+        }
+        button{
+            background-color: $darkGrayBlue;
+            color: $white;
+            width: 100%;
+            border-radius: 25px;
+            padding: 15px;
+        }
+    }
+}
