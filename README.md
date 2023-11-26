@@ -11,3 +11,6 @@ Welcome to my Frontend Mentor projects repository! Below is a list of projects I
 1. **[QR Code Component](./QR_Code_Component)**
    - [Project Page](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
    - [Solution](./QR_Code_Component)
+2. **[Order Summary Component](./Order_Summary_Component)**
+   - [Project Page](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj/hub)
+   - [Solution](./Order_Summary_Component)
