@@ -14,6 +14,9 @@ function outputValue() {
     let currentDay = new Date().getDay();
     let classReset = document.querySelector('.error');
 
+	document.querySelector('.daySection').classList.remove('error');
+    document.querySelector('.monthSection').classList.remove('error');
+    document.querySelector('.yearSection').classList.remove('error');
     
     if (dayInput === ''){
         dayError.innerHTML = "<h3>This field is required!</h3>";
