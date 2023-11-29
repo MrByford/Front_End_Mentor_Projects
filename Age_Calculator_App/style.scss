@@ -1,0 +1,117 @@
+// Colors
+// Primary
+$purple: hsl(259, 100%, 65%);
+$lightRed: hsl(0, 100%, 67%);
+// Neutral
+$white: hsl(0, 0%, 100%);
+$offWhite: hsl(0, 0%, 94%);
+$lightGrey: hsl(0, 0%, 86%);
+$smokeyGrey: hsl(0, 1%, 44%);
+$offBlack: hsl(0, 0%, 8%);
+
+// Typography
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  background-color: $offWhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  border-radius: 15px 15px 110px 15px;
+  background-color: $white;
+  padding: 20px;
+  width: 60vw;
+  margin: 20px 0;
+  @media (max-width: 375px){
+    min-width: 90vw;
+  }
+  .inputSection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    @media (max-width: 375px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    label {
+      display: block;
+    }
+    input {
+      width: 80%;
+      border-radius: 4px;
+      border: 0.5px solid $offBlack;
+      outline: none;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      font-size: 2rem;
+      &:focus, &:hover{
+        border: 0.5px solid $purple;
+      }
+      @media (max-width: 375px){
+        font-size: 1rem;
+      }
+    }
+  }
+  .submitSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    margin: 10px 0;
+    hr {
+      border: 0.5px solid $offBlack;
+      width: 100%;
+    }
+    img{
+        background-color: $purple;
+        border-radius: 50%;
+        padding: 10px;
+        position: inherit;
+    }
+    @media (max-width: 375px){
+            margin: 32px 0;
+            img{
+                position: absolute;
+                z-index: 1;
+            }
+        }
+    }
+  }
+  .outputSection{
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 800;
+    white-space: nowrap;
+    span{
+        color: $purple;
+    }  
+  }
+
+.error{
+    color: $lightRed;
+    &input{
+        border: 0.5px solid $lightRed;
+    }
+    .dayError, .monthError, .yearError{
+        font-size: 10px;
+    }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
