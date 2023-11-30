@@ -1,6 +1,6 @@
-# Frontend Mentor - QR code component solution
+# Frontend Mentor - Single Price Grid Component
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Single Price Grid Component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -23,14 +23,15 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/MrByford/Front_End_Mentor_Projects/tree/main/QR_Code_Component)
-- Live Site URL: [Add live site URL here](https://mrbyford.github.io/Front_End_Mentor_Projects/QR_Code_Component/qr_code_component.html)
+- Solution URL: [Add solution URL here](https://github.com/MrByford/Front_End_Mentor_Projects/tree/main/Single_Price_Grid_Component)
+- Live Site URL: [Add live site URL here](https://mrbyford.github.io/Front_End_Mentor_Projects/Single_Price_Grid_Component/Single_Price_Grid_Component.html)
 
 ## My process
 
 ### Built with
 
 - SCSS / SASS
+- Grid
 - Flex
 - Semantic HTML Markup
 - Google Fonts
@@ -39,11 +40,11 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### What I learned
 
-I havent really learned anything new whilst doing this project, the practice and developing use of scss and smeantic markup is definetly a take away from this project though. 
+Continuing to embed grid structuring knowledge. 
 
 ### Continued development
 
-I will continue to develop my skills in using flexbox and grid to create responsive designs. 
+Practice more with Grid system and the different properties it has for containers and items. 
 
 ## Author
 
