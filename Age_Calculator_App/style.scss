@@ -33,9 +33,7 @@ html {
   padding: 20px;
   width: min(700px, 90vw);
   margin: 20px 0;
-  @media (max-width: 540px){
-    min-width: 90vw;
-  }
+  box-sizing: border-box;
   .inputSection {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

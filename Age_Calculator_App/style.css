@@ -20,11 +20,7 @@ html {
   padding: 20px;
   width: min(700px, 90vw);
   margin: 20px 0;
-}
-@media (max-width: 540px) {
-  .container {
-    min-width: 90vw;
-  }
+  box-sizing: border-box;
 }
 .container .inputSection {
   display: grid;
