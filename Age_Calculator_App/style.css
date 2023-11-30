@@ -18,10 +18,10 @@ html {
   border-radius: 15px 15px 110px 15px;
   background-color: hsl(0, 0%, 100%);
   padding: 20px;
-  width: 60vw;
+  width: min(700px, 90vw);
   margin: 20px 0;
 }
-@media (max-width: 375px) {
+@media (max-width: 540px) {
   .container {
     min-width: 90vw;
   }
@@ -31,7 +31,7 @@ html {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
 }
-@media (max-width: 375px) {
+@media (max-width: 540px) {
   .container .inputSection {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -51,7 +51,7 @@ html {
 .container .inputSection input:focus, .container .inputSection input:hover {
   border: 0.5px solid hsl(259, 100%, 65%);
 }
-@media (max-width: 375px) {
+@media (max-width: 540px) {
   .container .inputSection input {
     font-size: 1rem;
   }
@@ -74,7 +74,7 @@ html {
   padding: 10px;
   position: inherit;
 }
-@media (max-width: 375px) {
+@media (max-width: 540px) {
   .container .submitSection {
     margin: 32px 0;
   }

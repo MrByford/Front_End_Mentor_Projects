@@ -1,5 +1,6 @@
 function outputValue() {
 
+    // variables
     let dayInput = document.getElementById('dayInput').value;
     let monthInput = document.getElementById('monthInput').value;
     let yearInput = document.getElementById('yearInput').value;
@@ -14,10 +15,15 @@ function outputValue() {
     let currentDay = new Date().getDay();
     let classReset = document.querySelector('.error');
 
+    // reset to no error or message on new submission
 	document.querySelector('.daySection').classList.remove('error');
     document.querySelector('.monthSection').classList.remove('error');
     document.querySelector('.yearSection').classList.remove('error');
+    dayError.innerHTML = '';
+    monthError.innerHTML = '';
+    yearError.innerHTML = '';
     
+    // if hell
     if (dayInput === ''){
         dayError.innerHTML = "<h3>This field is required!</h3>";
         document.querySelector('.daySection').classList.add('error');
