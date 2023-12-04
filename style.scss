@@ -9,17 +9,17 @@ h1{
     text-transform: uppercase;
 }
 .container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
     .cardContainer{
         border-radius: 10px;
-        flex: 1;
         overflow: hidden;
-        margin: 0 25px;
         img{
             width: 100%;
-            height: auto;
+            min-height: 150px;
+            max-height: auto;
         }
         span{
             display: block;
@@ -28,5 +28,8 @@ h1{
                 padding: 0 10px;
             }
         }
+    }
+    @media (max-width: 500px){
+        grid-template-columns: repeat(2, 1fr);
     }
 }

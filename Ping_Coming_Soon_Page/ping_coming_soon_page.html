@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="stylesheet" href="style.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+  <main>
+    <section>
+      <!-- Logo -->
+      <header>
+        <img src="./images/logo.svg" alt="">
+      </header>
+      <!-- We are launching -->
+      <article class="launchingContainer">
+        <h1>We are launching<span>soon!</span></h1>
+        <h2>Subscribe and get notified!</h2>
+        <!-- Signup Form -->
+        <div class="formContainer">
+          <div>
+              <input id="emailInput" type="email" placeholder="Your email address..." autocomplete="email" name="emailInput">
+          </div>
+          <div>
+              <button onclick="validEmail();">Notify Me</button>
+          </div>
+        </div>
+        <img src="./images/illustration-dashboard.png" alt="" class="launchPreview">
+      </article>
+    </section>
+    <section class="footerContainer">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-x-twitter"></i>
+      <span>&copy;Copyright Ping All Rights Reserved</span>
+    </section>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Matthew Byford</a>.
+    </p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

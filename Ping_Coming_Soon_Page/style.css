@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+}
+@media (max-width: 375px) {
+  html, body {
+    height: auto;
+  }
+}
+
+main {
+  width: 50vw;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+header {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.launchingContainer h1 {
+  font-weight: 300;
+  font-size: 2rem;
+  color: hsl(0, 0%, 59%);
+  padding: 0;
+  margin: 0;
+}
+.launchingContainer span {
+  font-weight: 600;
+  font-size: 2rem;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+.launchingContainer h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+  padding: 0;
+  margin: 0;
+}
+.launchingContainer input {
+  width: 70%;
+  border-radius: 50px;
+  border: 1px solid hsl(223, 100%, 88%);
+  outline: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,130 @@
+// Colors
+$blue: hsl(223, 87%, 63%);
+$paleBlue: hsl(223, 100%, 88%);
+$lightRed: hsl(354, 100%, 66%);
+$gray: hsl(0, 0%, 59%);
+$veryDarkBlue: hsl(243, 82%, 26%);
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+html, body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+    @media (max-width: 375px){
+        height: auto;
+    }
+}
+
+header{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.launchingContainer{
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @media (max-width: 375px){
+        width: 90vw;
+    }
+    h1{
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: 300;
+        color: $gray;
+        span{
+            padding: 0 0 0 7px;
+            font-weight: 700;
+            font-size: 2rem;
+            color: black;
+        }
+        @media (max-width: 375px){
+            font-size: 1.25rem;
+            span{
+                font-size: 1.25rem;
+            }
+        }
+    }
+    h2{
+        font-weight: 300;
+        font-size: 0.75rem;
+        color: $gray;
+        margin-top: -30px;
+        @media (max-width: 375px){
+            margin-top: -15px;
+        }
+    }
+    .formContainer{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        width: 100%;
+        gap: 10px;
+        p{
+            font-size: 0.75rem;
+            color: red;
+            margin: 5px;
+        }
+        input, button{
+            font-size: 0.75rem;
+            height: 45px;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+        }
+        input{
+            border: 1px solid $paleBlue;
+            padding: 15px;
+            width: 100%;
+            &::placeholder{
+                color: $paleBlue;
+            }
+        }
+        button{
+            background-color: $veryDarkBlue;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+        }
+        @media (max-width: 375px){
+            grid-template-columns: 1fr;
+            gap: 5px;
+            input, button{
+                margin: 5px 0;
+                width: 100%;
+            }
+        }
+    }
+    .launchPreview{
+        width: 100%;
+        margin: 25px 0;
+    }
+}
+.footerContainer{
+    text-align: center;
+    margin-bottom: 50px;
+    i{
+        margin: 10px 20px;
+        font-size: 0.75rem;
+        color: $veryDarkBlue;
+    }
+    span{
+        display: block;
+        font-size: 0.5rem;
+        color: $gray;
+    }
+}
+
+// Attr
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
